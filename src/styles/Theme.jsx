@@ -7,6 +7,9 @@ const theme = {
 			default: '#333',
 			hover: '#2e2e2e',
 		},
+		inputBackground: '#464646',
+		inputBackgroundHover: '#525252',
+		correct: '#53d13d',
 		background: {
 			light: '#2a2a2a',
 			normal: '#1e1e1e',

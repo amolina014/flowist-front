@@ -27,3 +27,11 @@ export const Button = styled.button.withConfig({
 		color: ${props => props.hover};
 	}
 `
+const style = style => {
+	return Object.keys(style).map(eachKey => `${eachKey}: ${style[eachKey]};`).join('');
+}
+export const StyledButton = styled(Button).withConfig({
+	shouldForwardProp: prop => !['style'].includes(prop),
+})`
+	${props => props.style && style(props.style)}
+`
